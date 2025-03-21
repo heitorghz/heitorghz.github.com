@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Sales News, Heitor News, Heitor Sales News">
+    <title>Heitor Sales News
+    </title>
 
+
+  </head>
+  <body>
+    <h1>Heitor Sales News </h1>
+    <h2>The most reliable News Website of your lifetime</h2>
+    <h3>As the most up-to-date website in the world, we seek to bring accurate information from around the globe directly to you!
+    <p> 
+     Soccer news: <a href="https://heitorghz.github.io/Heitor-Sales-News.html" target="_blank">Gama vs. Brasiliense</a>
+    </p>
+
+    <p>
+        The score between the two teams is <em>14 wins</em> for Gama, 3 draws and only <em>3 wins</em> for the Brasiliense team, making it clear that one side is <strong>much</strong> more likely to win than the other.
+    </p>
+    
+
+  </body>
+</html>

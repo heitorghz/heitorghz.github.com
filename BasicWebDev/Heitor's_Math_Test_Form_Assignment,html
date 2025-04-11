@@ -1,1 +1,45 @@
+<html lang="en-US">
+  <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="keywords" content="Math Test, Math, Math Questions">
+     <title>Heitor's Math Test Form </title>
+  </head>
+  <body>
+    <form>  
+    Student's Name <br/> 
+    <input type="text">
+    <br/> <br/> <br/>
+      <hr5>Question One</hr5> <br/>
+      <p> How much is &frac34; of &frac12; of two hundred? </p>
+      <input type="radio" name="answer1" value="answer1">25
+      <input type="radio" name="answer1" value="answer1">150
+      <input type="radio" name="answer1" value="answer1">20
+      <input type="radio" name="answer1" value="answer1">75
+    <br/> 
+      <hr5> Question Two</hr5> <br/>
+      <p> If I have 3 cats, and each of them has, successively, 1, 2, and 3 kittens, what would be the total number of cats in the end? </p>
+      <input type="radio" name="answer2" value="answer2">9
+      <input type="radio" name="answer2" value="answer2">7
+      <input type="radio" name="answer2" value="answer2">5
+      <input type="radio" name="answer2" value="answer2">6
+    <br/> 
+      <hr5>Question Three</hr5> <br/>
+      <p> If 11 &gt; X &gt; 10, X is: </p>
+      <input type="radio" name="answer3" value="answer3">part of the natural number group.
+      <input type="radio" name="answer3" value="answer3">part of the irrational number group.
+      <input type="radio" name="answer3" value="answer3">part of the rational number group.
+      <input type="radio" name="answer3" value="answer3">part of the irreal number group.
+    <br/> <br/> 
+     <b>Question One</b> <br/> 
+        <p> 
+          If I have 9 people sitting in a bar, one screams a lot and is thrown out, <br/> 
+          another calls his two friends, but it is uncertain whether they will come, <br/> 
+          and 4 people leave and a quarter of that number arrive. <br/> 
+          After that, what will be the number of people in the bar? Show your work  
+        </p> <br/>
+          <textarea rows="3" cols="80"></textarea>
+    
 
+
+    

@@ -1,0 +1,56 @@
+<html lang="en-US">
+  <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="keywords" content="Menu, Breakfast Menu, Lunch Menu, Dinner Menu, Meal Menu">
+     <title>Heitor's Menus </title>
+</head>
+<body style="font-family: Arial, sans-serif; display: flex; justify-content: center; gap: px; padding: 1px;">
+
+    <!--This is the Breakfast Menu-->
+  <div style="width: 400px; height: 550px; padding: 20px; margin: 10px; border: 3px solid #333; color: #fff; background-image: src='BasicWebDev/Images/Breakfeast1.jpeg'; 
+        background-size: cover; background-position: center;">
+    <div style="background-color: rgb(0, 0, 0, 0.6); margin:auto; border: 1px solid LightSlateGray; padding: 10px;">
+    <h2 style= "text-align: center">Breakfast Menu</h2>
+    <ul>
+      <li>Pancakes with Honey</li>
+      <li>Oatmeal</li>
+      <li>Fruit Salad with Honey</li>
+      <li>Grape Juice</li>
+      <li>Hot Chocolate</li>
+      <li>Capuccino</li>
+    </ul>
+    </div>
+  </div>
+    <!--This is the Lunch Menu-->
+ <div style="width: 400px; height: 550px; padding: 20px; margin: 10px; border: 3px solid #333; color: #fff; background-image: src='BasicWebDev/Images/Lunch1.jpeg'; 
+        background-size: cover; background-position: center;">
+     <div style="background-color: rgb(0, 0, 0, 0.6); margin:auto; border: 1px solid LightSlateGray; padding: 10px;">
+    <h2 style= "text-align: center">Lunch Menu</h2>
+    <ul>
+      <li>Plate Lunch</li>
+      <li>Salad</li>
+      <li>French Fries</li>
+      <li>Steak and Potatos</li>
+      <li>Iced Tea</li>
+      <li>Fresh Lemonade</li>
+    </ul>
+     </div>
+  </div>
+    <!--This is the Dinner Menu-->
+  <div style="width: 400px; height: 550px; padding: 20px; margin: 10px; border: 3px solid #333; color: #fff; background-image: src='BasicWebDev/Images/Dinner1.jpeg'; 
+        background-size: cover; background-position: center;">
+       <div style="background-color: rgb(0, 0, 0, 0.6); margin:auto; border: 1px solid LightSlateGray; padding: 10px;">
+    <h2 style= "text-align: center">Dinner Menu</h2>
+    <ul>
+      <li>Grilled Salmon</li>
+      <li>Spaghetti Bolognese</li>
+      <li>Roasted Vegetables</li>
+      <li>Red Wine</li>
+      <li>Chocolate Cake</li>
+    </ul>
+    </div>
+  </div>
+
+</body>
+</html>

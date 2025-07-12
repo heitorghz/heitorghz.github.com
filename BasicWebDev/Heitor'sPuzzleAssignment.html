@@ -2,99 +2,114 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Butterflies Puzzle, Grid">
-    <title>Heitor's Puzzle Assignment: Butterflies</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Butterflies Puzzle, Grid">
+  <title>Heitor's Puzzle Assignment: Butterflies</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Georgia', serif;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
 
-        .grid-container {
-            display: grid;
-            grid-template-rows: auto 1fr auto;
-            gap: 20px;
-            padding: 20px;
-            width: 600px;
-            background-color: PowderBlue;
-        }
+    .grid-container {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 20px;
+      background-color: PowderBlue;
+      padding: 20px;
+      width: 700px;
+      box-sizing: border-box;
+    }
 
-        .header,
-        .puzzle {
-            background-color: white;
-            padding: 20px;
-            border: 1px solid;
-        }
+    .header,
+    .puzzle-title,
+    .puzzle {
+      background-color: White;
+      padding: 20px;
+      border: 1px solid;
+    }
 
-        .header
-        {
-            text-align: center;
-        }
+    .header {
+      text-align: center;
+    }
 
-        .header h1 {
-            margin: 0;
-        }
+    .header h1 {
+      margin: 0;
+    }
 
-        .puzzle h2 {
-            text-align: center;
-        }
+    .puzzle-title {
+      text-align: center;
+    }
 
-        .puzzle-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 10px;
-        }
+    .puzzle h2 {
+      margin: 0;
+    }
 
-        .puzzle-container img {
-            width: 150px;
-            height: 110px;
-            object-fit: cover;
-            border: 2px solid;
-        }
+    .puzzle-container {
+      display: grid;
+      grid-template-columns: repeat(4, 150px);
+      grid-template-rows: repeat(4, 110px);
+      gap: 0;
+      justify-content: center;
+    }
 
-        .hidden {
-            display: none;
-        }
-    </style>
+    .puzzle-container img {
+      width: 150px;
+      height: 110px;
+      object-fit: cover;
+      display: block;
+      border: 2px solid black;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
-    <section class="grid-container">
+  <section class="grid-container">
 
-        <header class="header">
-            <h1>Dos Santos Sales, Heitor.</h1>
-            <p>Chosen Puzzle: Butterflies</p>
-        </header>
+    <header class="header">
+      <h1>Dos Santos Sales, Heitor.</h1>
+      <p>Chosen Puzzle: Butterflies</p>
+    </header>
 
-        <section class="puzzle">
-            <h2>Solved Puzzle</h2>
-            <div class="puzzle-container">
-                <img src="Images/PuzzlePieces/1.jpg" alt="puzzle piece 1">
-                <img src="Images/PuzzlePieces/2.jpg" alt="puzzle piece 2">
-                <img src="Images/PuzzlePieces/3.jpg" alt="puzzle piece 3">
-                <img src="Images/PuzzlePieces/4.jpg" alt="puzzle piece 4">
-                <img src="Images/PuzzlePieces/5.jpg" alt="puzzle piece 5">
-                <img src="Images/PuzzlePieces/6.jpg" alt="puzzle piece 6">
-                <img src="Images/PuzzlePieces/7.jpg" alt="puzzle piece 7">
-                <img src="Images/PuzzlePieces/8.jpg" alt="puzzle piece 8">
-                <img src="Images/PuzzlePieces/9.jpg" alt="puzzle piece 9">
-                <img src="Images/PuzzlePieces/10.jpg" alt="puzzle piece 10">
-                <img src="Images/PuzzlePieces/11.jpg" alt="puzzle piece 11">
-                <img src="Images/PuzzlePieces/12.jpg" alt="puzzle piece 12">
-                <img src="Images/PuzzlePieces/13.jpg" alt="puzzle piece 13">
-                <img src="Images/PuzzlePieces/14.jpg" alt="puzzle piece 14">
-                <img src="Images/PuzzlePieces/15.jpg" alt="puzzle piece 15">
-                <img src="Images/PuzzlePieces/16.jpg" alt="puzzle piece 16">
-
-                <!-- Wrong Piece -->
-                <img src="Images/PuzzlePieces/puzzle1_D.jpg" alt="puzzle piece D (wrong)" class="hidden">
-            </div>
-        </section>
+    <section class="puzzle-title">
+      <h2>My Solution To The Puzzle
+</h2>
     </section>
+
+    <section class="puzzle">
+      <div class="puzzle-container">
+        <img src="Images/PuzzlePieces/1.jpg" alt="puzzle piece 1" />
+        <img src="Images/PuzzlePieces/2.jpg" alt="puzzle piece 2" />
+        <img src="Images/PuzzlePieces/3.jpg" alt="puzzle piece 3" />
+        <img src="Images/PuzzlePieces/4.jpg" alt="puzzle piece 4" />
+        <img src="Images/PuzzlePieces/5.jpg" alt="puzzle piece 5" />
+        <img src="Images/PuzzlePieces/6.jpg" alt="puzzle piece 6" />
+        <img src="Images/PuzzlePieces/7.jpg" alt="puzzle piece 7" />
+        <img src="Images/PuzzlePieces/8.jpg" alt="puzzle piece 8" />
+        <img src="Images/PuzzlePieces/9.jpg" alt="puzzle piece 9" />
+        <img src="Images/PuzzlePieces/10.jpg" alt="puzzle piece 10" />
+        <img src="Images/PuzzlePieces/11.jpg" alt="puzzle piece 11" />
+        <img src="Images/PuzzlePieces/12.jpg" alt="puzzle piece 12" />
+        <img src="Images/PuzzlePieces/13.jpg" alt="puzzle piece 13" />
+        <img src="Images/PuzzlePieces/14.jpg" alt="puzzle piece 14" />
+        <img src="Images/PuzzlePieces/15.jpg" alt="puzzle piece 15" />
+        <img src="Images/PuzzlePieces/16.jpg" alt="puzzle piece 16" />
+      </div>
+
+      <!-- Hidden wrong piece -->
+      <img src="Images/PuzzlePieces/puzzle1_D.jpg" alt="wrong puzzle piece" class="hidden" />
+    </section>
+
+  </section>
 </body>
 
 </html>

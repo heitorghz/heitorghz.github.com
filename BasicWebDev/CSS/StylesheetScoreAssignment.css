@@ -28,6 +28,7 @@ th {
 }
 
 /* Pseudo-class */
-tr:hover {
-  background-color: MediumSlateBlue;
+input:focus {
+  outline: none;
+  background-color: #d6f3ff;
 }

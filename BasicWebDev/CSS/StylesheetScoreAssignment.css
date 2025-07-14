@@ -18,17 +18,17 @@ table {
 
 th, td {
   padding: 12px;
-  border: 1px solid Lavender;
+  border: 1px solid DarkOrange;
   text-align: center;
 }
 
 th {
-  background-color: PowderBlue;
+  background-color: LightSalmon;
   color: white;
 }
 
 /* Pseudo-class */
-input:focus {
+input:hover {
   outline: none;
-  background-color: #d6f3ff;
+  background-color: OrangeRed;
 }

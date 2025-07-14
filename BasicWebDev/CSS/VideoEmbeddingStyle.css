@@ -21,7 +21,7 @@ header {
 
 .step img {
     display: block;
-    max-width: 600px;
+    max-width: 50%;
     margin-top: 10px;
     border: 1px solid Silver;
 }

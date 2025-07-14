@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: White;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: Charcoal;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid Periwinkle;
+  text-align: center;
+}
+
+th {
+  background-color: Pastel Blue;
+  color: white;
+}
+
+/* Pseudo-class */
+tr:hover {
+  background-color: Robin Egg Blue;
+}

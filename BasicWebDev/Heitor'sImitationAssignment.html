@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="CSS3 Styling, Image Imitation, Imitation">
-  <title>CSS3 Imitation Project</title>
+  <title>CSS3 Image Projects</title>
   <style>
     body {
       font-family: sans-serif;
-      background-color: #f5f5f5;
+      background-color: lightgray;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
       padding: 20px;
-      justify-items: center;
     }
 
     .card {
       background: white;
       padding: 10px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
       text-align: center;
       position: relative;
       overflow: hidden;
     }
 
-    /* Penguins */
+    /* Penguins - Oval crop */
     .penguins img {
-      border-radius: 50%;
-      filter: grayscale(100%);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       width: 100%;
       height: auto;
+      border-radius: 50% / 40%;
+      border: 1px solid lightgray;
     }
 
-    /* Football field */
+    /* Football field + tic-tac-toe overlay */
     .football {
       position: relative;
     }
@@ -50,68 +47,58 @@
       top: 0;
       left: 0;
       width: 100%;
-      opacity: 0.6;
+      height: 100%;
+      object-fit: cover;
     }
 
-    /* Dinosaur */
+    /* Dinosaur - offset shadow */
     .dinosaur img {
       width: 100%;
-      transform: rotate(-5deg);
-      filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.3));
+      height: auto;
+      filter: drop-shadow(8px 8px 6px gray);
     }
 
-    /* Seagull */
+    /* Seagull - gradient background + shadow */
     .seagull {
-      background: linear-gradient(to bottom right, #c6d3ff, #e6eaff);
-      padding: 20px;
+      background: linear-gradient(to bottom right, lightblue, white);
+      box-shadow: 8px 8px 12px silver;
     }
 
     .seagull img {
-      transform: rotate(-15deg);
-      filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.3));
       width: 100%;
+      height: auto;
     }
 
-    /* Butterfly */
-    .butterfly {
-      background: url("images_assignment/butterfly.jpg") center/cover no-repeat;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      filter: blur(2px);
-      position: relative;
+    /* Butterfly - custom border radius */
+    .butterfly img {
+      width: 100%;
+      height: auto;
+      border-radius: 25% 10% 25% 0%;
+      opacity: 0.9;
     }
 
-    .butterfly::after {
-      content: "";
-      background: url("images_assignment/butterfly.jpg") center/contain no-repeat;
-      position: absolute;
-      width: 60%;
-      height: 60%;
-      filter: blur(0);
-      z-index: 1;
-    }
-
-    /* Theater */
+    /* Theater - blur + text */
     .theater {
       position: relative;
+      filter: blur(2px);
     }
 
     .theater img {
       width: 100%;
+      height: auto;
       display: block;
     }
 
-    .theater .text {
+    .theater::after {
+      content: "Presenting";
       position: absolute;
-      bottom: 20px;
-      width: 100%;
-      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       color: white;
       font-size: 2em;
-      font-weight: bold;
-      text-shadow: 2px 2px 6px black;
+      text-shadow: 2px 2px 4px black;
+      filter: blur(0);
     }
   </style>
 </head>
@@ -135,12 +122,11 @@
   </div>
 
   <div class="card butterfly">
-    <!-- background and foreground set in CSS -->
+    <img src="images_assignment/butterfly.jpg" alt="Butterfly" />
   </div>
 
   <div class="card theater">
     <img src="images_assignment/theater_stage.jpg" alt="Theater" />
-    <div class="text">Presenting</div>
   </div>
 </body>
 

@@ -32,12 +32,9 @@
       border: 1px solid lightgray;
     }
 
-    /* Football field + tic-tac-toe with heart center */
+    /* Football field + tic-tac-toe overlay */
     .football {
       position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
     .football img.field {
@@ -55,16 +52,7 @@
       object-fit: cover;
     }
 
-    .football::after {
-      content: "\2764"; /* Heart character */
-      font-size: 4em;
-      color: crimson;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
-    }
+    /* Removed heart overlay */
 
     /* Dinosaur - offset shadow */
     .dinosaur img {

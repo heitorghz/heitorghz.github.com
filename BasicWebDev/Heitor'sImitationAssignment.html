@@ -37,15 +37,12 @@
   position: relative;
   display: inline-block;
   border: 40px solid transparent;
-  border-radius: 10px;
-
-  /* Tic tac toe border using CSS gradients */
-  border-image-slice: 1;
-  border-image-source: 
-    linear-gradient(90deg, black 33%, transparent 33%, transparent 66%, black 66%),
-    linear-gradient(0deg, black 33%, transparent 33%, transparent 66%, black 66%);
+  border-image-source: url('images_assignment/tic-tac-toe.png');
+  border-image-slice: 40;
   border-image-repeat: round;
+  border-radius: 10px;
 }
+
 .football img.field {
   width: 100%;
   display: block;

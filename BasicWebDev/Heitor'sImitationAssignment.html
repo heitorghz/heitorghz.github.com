@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="CSS3 Styling, Image Imitation, Imitation">
+  <title>CSS3 Imitation Project</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f5f5f5;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      justify-items: center;
+    }
+
+    .card {
+      background: white;
+      padding: 10px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Penguins */
+    .penguins img {
+      border-radius: 50%;
+      filter: grayscale(100%);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      height: auto;
+    }
+
+    /* Football field */
+    .football {
+      position: relative;
+    }
+
+    .football img:first-child {
+      width: 100%;
+      display: block;
+    }
+
+    .football img:last-child {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0.6;
+    }
+
+    /* Dinosaur */
+    .dinosaur img {
+      width: 100%;
+      transform: rotate(-5deg);
+      filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.3));
+    }
+
+    /* Seagull */
+    .seagull {
+      background: linear-gradient(to bottom right, #c6d3ff, #e6eaff);
+      padding: 20px;
+    }
+
+    .seagull img {
+      transform: rotate(-15deg);
+      filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.3));
+      width: 100%;
+    }
+
+    /* Butterfly */
+    .butterfly {
+      background: url("images_assignment/butterfly.jpg") center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      filter: blur(2px);
+      position: relative;
+    }
+
+    .butterfly::after {
+      content: "";
+      background: url("images_assignment/butterfly.jpg") center/contain no-repeat;
+      position: absolute;
+      width: 60%;
+      height: 60%;
+      filter: blur(0);
+      z-index: 1;
+    }
+
+    /* Theater */
+    .theater {
+      position: relative;
+    }
+
+    .theater img {
+      width: 100%;
+      display: block;
+    }
+
+    .theater .text {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+      text-shadow: 2px 2px 6px black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card penguins">
+    <img src="images_assignment/penguins.jpg" alt="Penguins" />
+  </div>
+
+  <div class="card football">
+    <img src="images_assignment/football_field.jpg" alt="Football Field" />
+    <img src="images_assignment/tic-tac-toe.png" alt="Tic Tac Toe" />
+  </div>
+
+  <div class="card dinosaur">
+    <img src="images_assignment/dinosaur.png" alt="Dinosaur" />
+  </div>
+
+  <div class="card seagull">
+    <img src="images_assignment/seagull.png" alt="Seagull" />
+  </div>
+
+  <div class="card butterfly">
+    <!-- background and foreground set in CSS -->
+  </div>
+
+  <div class="card theater">
+    <img src="images_assignment/theater_stage.jpg" alt="Theater" />
+    <div class="text">Presenting</div>
+  </div>
+</body>
+
+</html>

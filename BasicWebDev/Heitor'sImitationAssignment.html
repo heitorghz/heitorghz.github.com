@@ -32,23 +32,38 @@
       border: 1px solid lightgray;
     }
 
-    /* Football field + tic-tac-toe overlay */
+    /* Football field + tic-tac-toe with heart center */
     .football {
       position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    .football img:first-child {
+    .football img.field {
       width: 100%;
       display: block;
+      border-radius: 10px;
     }
 
-    .football img:last-child {
+    .football img.overlay {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+
+    .football::after {
+      content: "\2764"; /* Heart character */
+      font-size: 4em;
+      color: crimson;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
     }
 
     /* Dinosaur - offset shadow */
@@ -77,16 +92,16 @@
       opacity: 0.9;
     }
 
-    /* Theater - blur + text */
+    /* Theater - blur background with text on top */
     .theater {
       position: relative;
-      filter: blur(2px);
     }
 
     .theater img {
       width: 100%;
       height: auto;
       display: block;
+      filter: blur(4px);
     }
 
     .theater::after {
@@ -97,8 +112,7 @@
       transform: translate(-50%, -50%);
       color: white;
       font-size: 2em;
-      text-shadow: 2px 2px 4px black;
-      filter: blur(0);
+      text-shadow: 2px 2px 6px black;
     }
   </style>
 </head>
@@ -109,8 +123,8 @@
   </div>
 
   <div class="card football">
-    <img src="images_assignment/football_field.jpg" alt="Football Field" />
-    <img src="images_assignment/tic-tac-toe.png" alt="Tic Tac Toe" />
+    <img class="field" src="images_assignment/football_field.jpg" alt="Football Field" />
+    <img class="overlay" src="images_assignment/tic-tac-toe.png" alt="Tic Tac Toe" />
   </div>
 
   <div class="card dinosaur">

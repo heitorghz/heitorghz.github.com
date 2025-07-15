@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS3 Image Projects</title>
+  <meta name="keywords" content="Imitation, CSS3, Image Styling
+    ">
+  <title>Heitor's Imitation Assignment</title>
   <style>
     body {
       font-family: sans-serif;
@@ -24,7 +25,6 @@
       overflow: hidden;
     }
 
-    /* Penguins - Oval crop */
     .penguins img {
       width: 100%;
       height: auto;
@@ -34,23 +34,20 @@
 
     /* Football field + tic-tac-toe overlay */
     .football {
-      position: relative;
-    }
+  position: relative;
+  display: inline-block;
+  border: 40px solid transparent;
+  border-image-source: url('images_assignment/tic-tac-toe.png');
+  border-image-slice: 40;
+  border-image-repeat: round;
+  border-radius: 10px;
+}
 
-    .football img.field {
-      width: 100%;
-      display: block;
-      border-radius: 10px;
-    }
-
-    .football img.overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+.football img.field {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
 
     /* Removed heart overlay */
 

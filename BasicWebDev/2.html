@@ -3,95 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="Imitation, CSS3, Image Styling
-    ">
+  <meta name="keywords" content="Imitation, CSS3, Image Styling">
   <title>Heitor's Imitation Assignment</title>
   <style>
+    /* --------------------------------------------------
+       GENERAL LAYOUT
+       -------------------------------------------------- */
     body {
       font-family: sans-serif;
       background-color: lightgray;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-      gap: 20px;
-      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;      /* spacing between cards */
+      padding: 8px;  /* spacing around the whole page */
     }
 
     .card {
+      width: fit-content;
+      height: fit-content;
       background: white;
-      text-align: center;
       position: relative;
       overflow: hidden;
-      padding: 0;
-      margin: 0;
       display: inline-block;
     }
 
+    /* remove inline‑gap below images */
+    .card img {
+      display: block;
+    }
+
+    /* --------------------------------------------------
+       PENGUINS (oval mask)
+       -------------------------------------------------- */
     .penguins img {
-  width: 300px;       
-  height: 200px;       
-  border-radius: 50%;
-  object-fit: cover;  
-  border: 1px solid lightgray;
-}
+      height: 100%;
+      border-radius: 50%;
+      border: 1px solid lightgray;
+    }
 
-    /* Football field + tic-tac-toe overlay */
-    .football {
-  padding: 0;
-  margin: 0;
-}
+    /* --------------------------------------------------
+       FOOTBALL WITH TIC‑TAC‑TOE FRAME
+       -------------------------------------------------- */
+    .football img.field {
+      width: auto;
+      height: auto;
+      border: 53px solid transparent;   /* thickness matches one sprite cell */
+      box-sizing: border-box;
+      border-image: url("images_assignment/tic-tac-toe.png") 53 round;
+    }
 
-.football img.field {
-  display: block;
-  height: auto;
-  border: 40px solid transparent;
-  border-radius: 10px;
-
-  /* Use your real tic-tac-toe image as border */
-  border-image-source: url("images_assignment/tic-tac-toe.png");
-  border-image-slice: 40;
-  border-image-repeat: round;
-}
-
-    /* Removed heart overlay */
-
-    /* Dinosaur - offset shadow */
+    /* --------------------------------------------------
+       DINOSAUR (blue hue + drop shadow)
+       -------------------------------------------------- */
     .dinosaur img {
       width: 100%;
       height: auto;
-      filter: drop-shadow(8px 8px 6px gray);
+      /* Turn the image blue & keep shadow */
+      -webkit-filter: hue-rotate(200deg) drop-shadow(8px 8px 6px gray);
+              filter: hue-rotate(200deg) drop-shadow(8px 8px 6px gray);
     }
 
-    /* Seagull - gradient background + shadow */
+    /* --------------------------------------------------
+       SEAGULL (gradient card + heavy bottom shadow)
+       -------------------------------------------------- */
     .seagull {
       background: linear-gradient(to bottom right, lightblue, white);
-      box-shadow: 8px 8px 12px silver;
+      box-shadow: 0 12px 12px rgba(0, 0, 0, 0.6);
     }
-
     .seagull img {
       width: 100%;
       height: auto;
     }
 
-    /* Butterfly - custom border radius */
+    /* --------------------------------------------------
+       BUTTERFLY (blue hue + corner radius)
+       -------------------------------------------------- */
     .butterfly img {
       width: 100%;
       height: auto;
-      border-radius: 25% 10% 25% 10%;
+      border-radius: 25% 0 25% 0;
       opacity: 0.9;
+      -webkit-filter: hue-rotate(200deg);
+              filter: hue-rotate(200deg);
     }
 
-    /* Theater - blur background with text on top */
+    /* --------------------------------------------------
+       THEATER (blurred stage with overlay text)
+       -------------------------------------------------- */
     .theater {
       position: relative;
     }
-
     .theater img {
       width: 100%;
       height: auto;
       display: block;
-      filter: blur(4px);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
     }
-
     .theater::after {
       content: "Presenting";
       position: absolute;
@@ -130,5 +139,4 @@
     <img src="images_assignment/theater_stage.jpg" alt="Theater" />
   </div>
 </body>
-
 </html>

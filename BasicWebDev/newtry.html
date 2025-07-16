@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Imitation, CSS3, Image Styling">
+  <title>Heitor's Imitation Assignment</title>
+  <style>
+    /* General layout ----------------------------------------------------- */
+    :root {
+      --gap: 20px;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: lightgray;
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--gap);
+      padding: var(--gap);
+      justify-content: center;
+    }
+
+    .card {
+      width: fit-content;
+      height: fit-content;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .card img {            /* ensure no inline‑gap */
+      display: block;
+    }
+
+    /* Penguins ----------------------------------------------------------- */
+    .penguins img {
+      /* keep natural width, make oval mask */
+      height: 100%;
+      border-radius: 50%;
+      border: 1px solid lightgray;
+    }
+
+    /* Football field with tic‑tac‑toe frame ------------------------------ */
+    .football img.field {
+      /* keep intrinsic size of football_field.jpg */
+      width: auto;
+      height: auto;
+
+      /* one tic‑tac‑toe cell ≈ 160px / 3 ≈ 53px  → use that as border */
+      border: 53px solid transparent;
+      box-sizing: border-box; /* include border in overall box */
+
+      /* shorthand for border-image */
+      border-image: url("images_assignment/tic-tac-toe.png") 53 round;
+    }
+
+    /* Dinosaur ----------------------------------------------------------- */
+    .dinosaur img {
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(8px 8px 6px gray);
+    }
+
+    /* Seagull ------------------------------------------------------------ */
+    .seagull {
+      background: linear-gradient(to bottom right, lightblue, white);
+      box-shadow: 8px 8px 12px silver;
+    }
+    .seagull img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Butterfly ---------------------------------------------------------- */
+    .butterfly img {
+      width: 100%;
+      height: auto;
+      border-radius: 25% 10% 25% 0%;
+      opacity: 0.9;
+    }
+
+    /* Theater ------------------------------------------------------------ */
+    .theater {
+      position: relative;
+    }
+    .theater img {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: blur(4px);
+    }
+    .theater::after {
+      content: "Presenting";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 2em;
+      text-shadow: 2px 2px 6px black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card penguins">
+    <img src="images_assignment/penguins.jpg" alt="Penguins" />
+  </div>
+
+  <div class="card football">
+    <img class="field" src="images_assignment/football_field.jpg" alt="Football Field" />
+  </div>
+
+  <div class="card dinosaur">
+    <img src="images_assignment/dinosaur.png" alt="Dinosaur" />
+  </div>
+
+  <div class="card seagull">
+    <img src="images_assignment/seagull.png" alt="Seagull" />
+  </div>
+
+  <div class="card butterfly">
+    <img src="images_assignment/butterfly.jpg" alt="Butterfly" />
+  </div>
+
+  <div class="card theater">
+    <img src="images_assignment/theater_stage.jpg" alt="Theater" />
+  </div>
+</body>
+</html>

@@ -22,6 +22,9 @@
       text-align: center;
       position: relative;
       overflow: hidden;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
     }
 
     .penguins img {
@@ -29,23 +32,24 @@
       height: auto;
       border-radius: 50% / 40%;
       border: 1px solid lightgray;
-      max-width: 100%
     }
 
     /* Football field + tic-tac-toe overlay */
     .football {
-  position: relative;
-  display: inline-block;
-  border: 40px solid;
-  border-image: url('images_assignment/tic-tac-toe.png') 27 round;
+  padding: 0;
+  margin: 0;
 }
 
 .football img.field {
-  width: auto;       
-  height: auto;
   display: block;
+  height: auto;
+  border: 40px solid transparent;
   border-radius: 10px;
-  max-width: 100%;   
+
+  /* Use your real tic-tac-toe image as border */
+  border-image-source: url("images_assignment/tic-tac-toe.png");
+  border-image-slice: 40;
+  border-image-repeat: round;
 }
 
     /* Removed heart overlay */

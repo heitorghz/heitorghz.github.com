@@ -35,9 +35,15 @@
 
 .football img.field {
   display: block;
+  width: 300px; /* or match the actual image width */
   height: auto;
-  border: 40px solid transparent;
-  border-radius: 10px;
+  border-width: 50px;
+  border-style: solid;
+  border-image-source: url("images_assignment/tic-tac-toe.png");
+  border-image-slice: 50;
+  border-image-repeat: stretch; /* use stretch to avoid rounding gaps */
+  border-image-outset: 0;
+}
 
   /* Use your real tic-tac-toe image as border */
   border-image-source: url("images_assignment/tic-tac-toe.png");

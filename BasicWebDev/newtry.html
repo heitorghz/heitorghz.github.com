@@ -16,8 +16,6 @@
       background-color: lightgray;
       display: flex;
       flex-wrap: wrap;
-      gap: var(--gap);
-      padding: var(--gap);
       justify-content: center;
     }
 
@@ -29,11 +27,11 @@
       overflow: hidden;
     }
 
-    .card img {            /* ensure no inline‑gap */
+    .card img {            
       display: block;
     }
 
-    /* Penguins ----------------------------------------------------------- */
+
     .penguins img {
       /* keep natural width, make oval mask */
       height: 100%;
@@ -41,28 +39,25 @@
       border: 1px solid lightgray;
     }
 
-    /* Football field with tic‑tac‑toe frame ------------------------------ */
+
     .football img.field {
-      /* keep intrinsic size of football_field.jpg */
+
       width: auto;
       height: auto;
 
-      /* one tic‑tac‑toe cell ≈ 160px / 3 ≈ 53px  → use that as border */
       border: 53px solid transparent;
-      box-sizing: border-box; /* include border in overall box */
-
-      /* shorthand for border-image */
+      box-sizing: border-box; 
       border-image: url("images_assignment/tic-tac-toe.png") 53 round;
     }
 
-    /* Dinosaur ----------------------------------------------------------- */
+
     .dinosaur img {
       width: 100%;
       height: auto;
       filter: drop-shadow(8px 8px 6px gray);
     }
 
-    /* Seagull ------------------------------------------------------------ */
+   
     .seagull {
       background: linear-gradient(to bottom right, lightblue, white);
       box-shadow: 8px 8px 12px silver;
@@ -72,7 +67,7 @@
       height: auto;
     }
 
-    /* Butterfly ---------------------------------------------------------- */
+  
     .butterfly img {
       width: 100%;
       height: auto;
@@ -80,7 +75,7 @@
       opacity: 0.9;
     }
 
-    /* Theater ------------------------------------------------------------ */
+ 
     .theater {
       position: relative;
     }

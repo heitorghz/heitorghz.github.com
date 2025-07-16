@@ -6,17 +6,14 @@
   <meta name="keywords" content="Imitation, CSS3, Image Styling">
   <title>Heitor's Imitation Assignment</title>
   <style>
-    /* --------------------------------------------------
-       GENERAL LAYOUT
-       -------------------------------------------------- */
     body {
       font-family: sans-serif;
       background-color: lightgray;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 8px;      /* spacing between cards */
-      padding: 8px;  /* spacing around the whole page */
+      gap: 8px;     
+      padding: 8px; 
     }
 
     .card {
@@ -28,23 +25,16 @@
       display: inline-block;
     }
 
-    /* remove inline‑gap below images */
     .card img {
       display: block;
     }
 
-    /* --------------------------------------------------
-       PENGUINS (oval mask)
-       -------------------------------------------------- */
     .penguins img {
       height: 100%;
       border-radius: 50%;
       border: 1px solid lightgray;
     }
 
-    /* --------------------------------------------------
-       FOOTBALL WITH TIC‑TAC‑TOE FRAME
-       -------------------------------------------------- */
     .football img.field {
       width: auto;
       height: auto;
@@ -53,9 +43,6 @@
       border-image: url("images_assignment/tic-tac-toe.png") 53 round;
     }
 
-    /* --------------------------------------------------
-       DINOSAUR (blue hue + drop shadow)
-       -------------------------------------------------- */
     .dinosaur img {
       width: 100%;
       height: auto;
@@ -64,21 +51,16 @@
               filter: hue-rotate(110deg) drop-shadow(8px 8px 6px gray);
     }
 
-    /* --------------------------------------------------
-       SEAGULL (gradient card + heavy bottom shadow)
-       -------------------------------------------------- */
     .seagull {
       background: linear-gradient(to bottom right, lightblue, white);
-      box-shadow: 0 12px 12px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 12px 12px black;
     }
+    
     .seagull img {
       width: 100%;
       height: auto;
     }
-
-    /* --------------------------------------------------
-       BUTTERFLY (blue hue + corner radius)
-       -------------------------------------------------- */
+    
     .butterfly img {
       width: 100%;
       height: auto;
@@ -87,13 +69,11 @@
       -webkit-filter: invert(100%);
               filter: invert(100%);
     }
-
-    /* --------------------------------------------------
-       THEATER (blurred stage with overlay text)
-       -------------------------------------------------- */
+    
     .theater {
       position: relative;
     }
+    
     .theater img {
       width: 100%;
       height: auto;
@@ -101,6 +81,7 @@
       -webkit-filter: blur(4px);
               filter: blur(4px);
     }
+    
     .theater::after {
       content: "Presenting";
       position: absolute;
@@ -108,9 +89,10 @@
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
-      font-size: 2em;
+      font-size: 32px;
       text-shadow: 2px 2px 6px black;
     }
+    
   </style>
 </head>
 

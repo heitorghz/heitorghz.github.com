@@ -1,0 +1,74 @@
+body {
+  font-family: 'Georgia', serif;
+  background: lavender;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeScaleIn 1.2s forwards;
+}
+
+@keyframes fadeScaleIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 960px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px gray;
+  cursor: pointer;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+question {
+  font-weight: bold;
+  font-size: 1.1rem;
+  z-index: 2;
+}
+
+.answer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 0 0 10px 10px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  pointer-events: none;
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+
+.card:hover .answer {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}

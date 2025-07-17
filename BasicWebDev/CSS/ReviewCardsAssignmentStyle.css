@@ -11,14 +11,12 @@ h1 {
   font-size: 40px;
   margin-bottom: 30px;
   opacity: 0;
-  transform: scale(0.8);
-  animation: fadeInStart 1.2s forwards;
+  animation: fadein 1.2s forwards;
 }
 
-@keyframes fadeInStart {
+@keyframes fadein {
   to {
     opacity: 1;
-    transform: scale(1);
   }
 }
 
